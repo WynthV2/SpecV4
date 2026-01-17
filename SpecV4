@@ -1,3 +1,4 @@
+--// REMOTE WHITELIST (WITH SAFE KICK)
 local Players = game:GetService("Players")
 
 local WHITELIST_URL = "https://raw.githubusercontent.com/Wyroke/Whitelist/refs/heads/main/SpecWL"
@@ -34,7 +35,7 @@ if not isWhitelisted(player.UserId) then
     -- delayed kick = injector safe
     task.spawn(function()
         task.wait(1)
-        player:Kick("You are not whitelisted NIGGER.")
+        player:Kick("You are not whitelisted.")
     end)
     return
 end
